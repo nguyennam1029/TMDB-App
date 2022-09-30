@@ -1,0 +1,18 @@
+.cart-item {
+    min-width : 150px;
+    height    : auto;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+
+
+    background: #dbdbdb;
+    overflow  : hidden;
+
+}
+
+.cart-item img {
+    border-radius        : 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius   : 30px;
+    -ms-border-radius    : 30px;
+    -o-border-radius     : 30px;
+}

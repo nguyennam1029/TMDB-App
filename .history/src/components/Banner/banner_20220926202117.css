@@ -1,0 +1,45 @@
+.banner {
+    margin-top: 64px;
+    background-image: linear-gradient(to right, rgba(3, 37, 65, 0.8) 0%, rgba(3, 37, 65, 0) 100%),
+        url("../../assets/images/banner.jpg");
+    min-height: 300px;
+
+    max-height         : 360px;
+    background-position: top center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    color              : #fff;
+}
+
+.banner-content {
+    padding: 30px 40px;
+}
+
+.banner-title {}
+
+.banner-title h2 {
+    font-size  : 4.8rem;
+    font-weight: 700;
+}
+
+.banner-title h3 {
+    font-size  : 3.2rem;
+    font-weight: 600;
+}
+
+.banner-search {
+    width   : 100%;
+    position: relative;
+}
+
+.banner-search input {
+    width                : 100%;
+    padding              : 10px 24px;
+    border               : none;
+    font-size            : 1.6rem;
+    border-radius        : 6rem;
+    -webkit-border-radius: 6rem;
+    -moz-border-radius   : 6rem;
+    -ms-border-radius    : 6rem;
+    -o-border-radius     : 6rem;
+}

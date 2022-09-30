@@ -1,0 +1,16 @@
+.popular {
+    margin: 40px 0;
+}
+
+.popular-heading {
+    font-size  : 2.4rem;
+    font-weight: 600;
+}
+
+.popular-list {
+    overflow       : scroll;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 20px;
+}

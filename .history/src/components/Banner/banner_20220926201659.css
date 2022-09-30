@@ -1,0 +1,25 @@
+.banner {
+    margin-top: 64px;
+    background-image: linear-gradient(to right, rgba(3, 37, 65, 0.8) 0%, rgba(3, 37, 65, 0) 100%),
+        url("../../assets/images/banner.jpg");
+    min-height: 300px;
+
+    max-height         : 360px;
+    background-position: top center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    color              : #fff;
+}
+
+.banner-content {
+    padding: 30px 40px;
+}
+
+.banner-title {}
+
+.banner-title h2 {
+    font-size  : 2.4rem;
+    font-weight: 700;
+}
+
+.banner-search {}

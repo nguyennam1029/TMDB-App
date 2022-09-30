@@ -1,0 +1,25 @@
+.popular {
+    margin  : 40px 0;
+    position: relative;
+}
+
+.popular::before {
+    content         : "";
+    width           : 100%;
+    height          : 100%;
+    background-color: red;
+}
+
+.popular-heading {
+    font-size  : 2.4rem;
+    font-weight: 600;
+}
+
+.popular-list {
+
+    display       : flex;
+    gap           : 20px;
+    overflow-x    : scroll;
+    margin        : 14px 0 0;
+    padding-bottom: 32px;
+}

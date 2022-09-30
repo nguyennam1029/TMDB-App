@@ -1,0 +1,41 @@
+.header {
+    background-color: #032541;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+
+    height    : 64px;
+    width     : 100%;
+    z-index   : 10;
+    transition: top 0.2s linear;
+
+}
+
+.nav__left--img {
+    width       : 154px;
+    height      : auto;
+    margin-right: 16px;
+}
+
+.nav__left--img img {
+    width: 100%;
+}
+
+.nav__item {
+    color      : var(--primary-text-color);
+    font-weight: 600;
+}
+
+.nav__right--item {
+    font-size  : 20px;
+    font-weight: 600;
+}
+
+.nav__right--item.search {
+    color      : #01b4e4;
+    font-weight: 800;
+
+}

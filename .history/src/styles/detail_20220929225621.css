@@ -1,0 +1,6 @@
+ .movie-detail {
+     border-bottom      : 1px solid var(--primaryColor);
+     background-position: right -200px top;
+     background-size    : cover;
+     background-repeat  : no-repeat;
+ }

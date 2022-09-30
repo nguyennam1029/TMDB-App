@@ -1,0 +1,31 @@
+.popular {
+    margin: 40px 0;
+
+}
+
+
+
+.popular-heading {
+    font-size  : 2.4rem;
+    font-weight: 600;
+}
+
+.popular-list {
+    position      : relative;
+    display       : flex;
+    gap           : 20px;
+    overflow-x    : scroll;
+    margin        : 14px 0 0;
+    padding-bottom: 32px;
+}
+
+.popular-list::after {
+    content         : '';
+    width           : 60px;
+    height          : 100%;
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 100%);
+
+}

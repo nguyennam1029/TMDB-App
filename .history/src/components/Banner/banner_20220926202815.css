@@ -1,0 +1,73 @@
+.banner {
+    margin-top: 64px;
+    background-image: linear-gradient(to right, rgba(3, 37, 65, 0.8) 0%, rgba(3, 37, 65, 0) 100%),
+        url("../../assets/images/banner.jpg");
+    min-height: 300px;
+
+    max-height         : 360px;
+    background-position: top center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    color              : #fff;
+}
+
+.banner-content {
+    padding: 30px 40px;
+    width  : 100%;
+}
+
+.banner-title {}
+
+.banner-title h2 {
+    font-size  : 4.8rem;
+    font-weight: 700;
+}
+
+.banner-title h3 {
+    font-size  : 3.2rem;
+    font-weight: 600;
+}
+
+.banner-search {
+    width     : 100%;
+    position  : relative;
+    overflow  : hidden;
+    margin-top: 30px;
+}
+
+.banner-search input {
+    width                : 100%;
+    padding              : 10px 24px;
+    border               : none;
+    font-size            : 1.6rem;
+    border-radius        : 6rem;
+    -webkit-border-radius: 6rem;
+    -moz-border-radius   : 6rem;
+    -ms-border-radius    : 6rem;
+    -o-border-radius     : 6rem;
+}
+
+.banner-search button {
+    font-size  : 1.6rem;
+    font-weight: 700;
+    color      : #fff;
+    background : linear-gradient(to right, rgba(30,
+                213,
+                169, 1) 0%, rgba(1,
+                180,
+                228, 1) 100%);
+    position             : absolute;
+    bottom               : 0;
+    right                : 0;
+    height               : 100%;
+    border               : none;
+    padding              : 10px 26px;
+    border-radius        : 6rem;
+    -webkit-border-radius: 6rem;
+    -moz-border-radius   : 6rem;
+    -ms-border-radius    : 6rem;
+    -o-border-radius     : 6rem;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+}

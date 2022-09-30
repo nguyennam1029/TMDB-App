@@ -1,0 +1,19 @@
+ .movie-detail {
+     width                 : 100%;
+     position              : relative;
+     /* z-index            : 1; */
+     border-bottom         : 1px solid var(--primaryColor);
+     background-position   : right -200px top;
+     background-size       : cover;
+     background-repeat     : no-repeat;
+ }
+
+ .movie-detail::before {
+     content         : "";
+     position        : absolute;
+     top             : 0;
+     right           : 0;
+     bottom          : 0;
+     left            : 0;
+     background-image: linear-gradient(to right, rgba(31.5, 31.5, 31.5, 1) 150px, rgba(31.5, 31.5, 31.5, 0.84) 100%);
+ }
