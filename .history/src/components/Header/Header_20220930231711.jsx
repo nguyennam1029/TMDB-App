@@ -16,8 +16,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Row,
-  Col,
 } from "reactstrap";
 import { Container } from "react-bootstrap";
 // import Dropdown from "react-bootstrap/Dropdown";
@@ -25,7 +23,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import "./header.css";
 const Header = ({ genres }) => {
-  console.log(genres);
   const NavItemLinks = [
     {
       display: "Moive",
@@ -74,23 +71,10 @@ const Header = ({ genres }) => {
                   <DropdownToggle caret size="lg">
                     Thể loại
                   </DropdownToggle>
-                  <DropdownMenu className="list-genres">
-                    <Row>
-                      {genres &&
-                        genres.map((item) => {
-                          return (
-                            <Col lg="6">
-                              <NavLink
-                                to={`movie/genre/${item.id}`}
-                                key={item.id}
-                                className="genre-item"
-                              >
-                                {item.name}
-                              </NavLink>
-                            </Col>
-                          );
-                        })}
-                    </Row>
+                  <DropdownMenu>
+                    {/* {genres.map((item, index) => (
+                      <Link key={index}>{item.name}</Link>
+                    ))} */}
                   </DropdownMenu>
                 </Dropdown>
               </li>

@@ -74,17 +74,13 @@ const Header = ({ genres }) => {
                   <DropdownToggle caret size="lg">
                     Thể loại
                   </DropdownToggle>
-                  <DropdownMenu className="list-genres">
+                  <DropdownMenu>
                     <Row>
                       {genres &&
                         genres.map((item) => {
                           return (
-                            <Col lg="6">
-                              <NavLink
-                                to={`movie/genre/${item.id}`}
-                                key={item.id}
-                                className="genre-item"
-                              >
+                            <Col lg="3">
+                              <NavLink to="vcl" key={item.id}>
                                 {item.name}
                               </NavLink>
                             </Col>

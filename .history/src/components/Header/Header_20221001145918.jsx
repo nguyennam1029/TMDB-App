@@ -79,7 +79,7 @@ const Header = ({ genres }) => {
                       {genres &&
                         genres.map((item) => {
                           return (
-                            <Col lg="6">
+                            <Col lg="3">
                               <NavLink
                                 to={`movie/genre/${item.id}`}
                                 key={item.id}

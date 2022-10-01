@@ -16,8 +16,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Row,
-  Col,
 } from "reactstrap";
 import { Container } from "react-bootstrap";
 // import Dropdown from "react-bootstrap/Dropdown";
@@ -74,23 +72,9 @@ const Header = ({ genres }) => {
                   <DropdownToggle caret size="lg">
                     Thể loại
                   </DropdownToggle>
-                  <DropdownMenu className="list-genres">
-                    <Row>
-                      {genres &&
-                        genres.map((item) => {
-                          return (
-                            <Col lg="6">
-                              <NavLink
-                                to={`movie/genre/${item.id}`}
-                                key={item.id}
-                                className="genre-item"
-                              >
-                                {item.name}
-                              </NavLink>
-                            </Col>
-                          );
-                        })}
-                    </Row>
+                  <DropdownMenu>
+                    <DropdownItem header>Header</DropdownItem>
+                    <DropdownItem>Action</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </li>

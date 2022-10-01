@@ -11,21 +11,46 @@ import {
   IoPerson,
   IoSearchSharp,
 } from "react-icons/io5";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Row,
-  Col,
-} from "reactstrap";
 import { Container } from "react-bootstrap";
-// import Dropdown from "react-bootstrap/Dropdown";
+import Dropdown from "react-bootstrap/Dropdown";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import "./header.css";
 const Header = ({ genres }) => {
-  console.log(genres);
+  // const dispatch = useDispatch();
+  // const [searchName, setSearchName] = useState("");
+  // const Navigate = useNavigate();
+  // const handleOnchange = (value) => {
+  //   value !== "" ? Navigate("/seachr") : Navigate("/");
+  //   setSearchName(value);
+  // };
+
+  // useEffect(() => {
+  //   dispatch(seachrItem(searchName));
+  // }, [searchName]);
+  // return (
+  //   <ul>
+  //     <li>
+  //       <Link to={"/home"} onClick={() => setSearchName("")}>
+  //         Home
+  //       </Link>
+  //     </li>
+  //     <li>
+  //       <input
+  //         type="text"
+  //         value={searchName}
+  //         placeholder="Tìm kiếm"
+  //         onChange={(e) => {
+  //           handleOnchange(e.target.value);
+  //         }}
+  //       />
+  //     </li>
+  //     <li>
+  //       Tim kiem <IoSearchOutline />
+  //     </li>
+  //   </ul>
+  // );
+  //CÁC MENU ITEM
   const NavItemLinks = [
     {
       display: "Moive",
@@ -44,8 +69,6 @@ const Header = ({ genres }) => {
       url: "/More",
     },
   ];
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
   return (
     <div className="header">
       <Container>
@@ -68,32 +91,6 @@ const Header = ({ genres }) => {
                   </NavLink>
                 </li>
               ))}
-
-              <li>
-                <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-                  <DropdownToggle caret size="lg">
-                    Thể loại
-                  </DropdownToggle>
-                  <DropdownMenu className="list-genres">
-                    <Row>
-                      {genres &&
-                        genres.map((item) => {
-                          return (
-                            <Col lg="6">
-                              <NavLink
-                                to={`movie/genre/${item.id}`}
-                                key={item.id}
-                                className="genre-item"
-                              >
-                                {item.name}
-                              </NavLink>
-                            </Col>
-                          );
-                        })}
-                    </Row>
-                  </DropdownMenu>
-                </Dropdown>
-              </li>
             </ul>
           </div>
           <div className="nav__right">

@@ -1,0 +1,58 @@
+.header {
+    background-color: #032541;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+
+    height    : 64px;
+    width     : 100%;
+    z-index   : 10;
+    transition: top 0.2s linear;
+
+}
+
+.nav__left--img {
+    width       : 154px;
+    height      : auto;
+    margin-right: 16px;
+}
+
+.nav__left--img img {
+    width: 100%;
+}
+
+.nav__item {
+    font-size  : 1.6rem;
+    color      : var(--primary-text-color);
+    font-weight: 600;
+}
+
+.nav__right--item {
+    font-size  : 2rem;
+    font-weight: 600;
+}
+
+.nav__right--item.search {
+    font-size  : 1.8rem;
+    color      : #01b4e4;
+    font-weight: 800;
+
+}
+
+.list-genres {
+    min-width       : 600px;
+    padding         : 10px 8px;
+    margin-top      : 14px;
+    background-color: #023f70f7;
+}
+
+.genre-item {
+    font-size  : 1.6rem;
+    font-weight: 600;
+    color      : #fff;
+    padding    : 10px 0;
+    display    : inline-block;
+}

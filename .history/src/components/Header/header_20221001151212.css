@@ -58,11 +58,11 @@
     padding           : 10px 4px;
     display           : inline-block;
     width             : 100%;
-    transition        : .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -moz-transition   : .2s ease-in;
-    -ms-transition    : .2s ease-in;
-    -o-transition     : .2s ease-in;
+    transition        : .25s ease-in;
+    -webkit-transition: .25s ease-in;
+    -moz-transition   : .25s ease-in;
+    -ms-transition    : .25s ease-in;
+    -o-transition     : .25s ease-in;
 }
 
 .genre-item:hover {
