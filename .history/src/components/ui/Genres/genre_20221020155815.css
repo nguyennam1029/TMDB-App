@@ -1,0 +1,18 @@
+.genre {
+    margin-top: 120px;
+}
+
+.genre-heading {
+    margin-bottom: 40px;
+    font-size    : 2rem;
+    font-weight  : 900;
+}
+
+.load-more {
+    margin          : 20px auto;
+    border          : none;
+    padding         : 6px 12px;
+    background-color: blue;
+    color           : #fff;
+    font-size       : 2rem;
+}
